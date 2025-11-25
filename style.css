@@ -1,0 +1,255 @@
+
+
+/* ------ FONTS ---------*/
+
+
+@font-face{
+	font-family: "futura-pt-bold", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "futura-pt", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+
+}
+
+
+@font-face{
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face{
+	font-family: "futura-pt", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+p { 
+	font-size: 32px;
+	font-weight: 400;
+	color: #000000;
+ }
+
+
+
+h1{
+	font-family: "futura-pt-bold";
+	font-weight: 700;
+	font-size: 96px;
+	color: #FFFFFF;
+
+}
+
+
+h2{
+	font-family: "futura-pt";
+	font-weight: 600;
+	font-size: 64px;
+	color: #1650A2;
+}
+
+
+h3{
+	font-family: "futura-pt";
+	font-weight: 600;
+	font-size: 55px;
+	color: #1650A2;
+}
+
+
+
+h4{
+	font-family: "futura-pt";
+	font-weight: 500;
+	font-size: 40px;
+	color: #1650A2;
+}
+
+
+h5{
+	font-family: "futura-pt";
+	font-weight: 500;
+	font-size: 32px;
+	color: #1650A2;
+}
+
+
+body{
+	font-family: futura-pt;
+}
+
+
+.nav-text{
+	font-family: "futura-pt";
+	font-weight: 500;
+	font-size: 20px;
+	color: ffffff;
+	padding-right: 100px;
+
+}
+
+
+/* ------ NAVIGATION ---------*/
+
+.nav-link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.nav-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+
+nav, li{
+	list-style: none;
+
+}
+
+
+header{
+	background-color: #1650A2;
+
+
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 180px;
+}
+
+
+
+/* ------ Individual Styles ---------*/
+
+.section-padding{
+	section-padding: 70px;
+}
+
+
+
+
+
+
+/* ------ Images ---------*/
+
+
+.hero-image{
+	background-image: url(images/hero-image.webp);
+	background-size: cover;
+	height: 600px;
+	max-width: 100%;
+	object-fit: cover;
+	background-position: center;
+	
+}
+
+.halloween-image{
+	aspect-ratio: 5 / 3;
+}
+
+
+
+/* ------ Text Styles ---------*/
+
+
+.hero-text{
+	text-align: left;
+	margin-right: 20%;
+}
+
+.art-gallery-header{
+	margin-left: 30%;
+}
+
+/* ------ Icons ---------*/
+
+.search-icon{
+	width: 1%;
+	position: absolute;
+	right: 12.5%;
+	top: 10%;
+
+}
+
+
+.waves-lb{
+	width: 10%;
+	position: absolute;
+	bottom: 10%;
+	right: 30%;
+	z-index: 2;
+}
+
+
+/* ------ Postioning ---------*/
+
+.position-relative {
+	position: relative;
+}
+
+.z-index-2{
+	position: relative;
+	z-index: 2;
+}
+
+
+/* ------ Buttons ---------*/
+
+.hero-btn {
+	color: #1650A2;
+	padding: 17px 22px;
+	background-color: white;
+	text-decoration: none;
+	font-weight: 500px;
+	font-size: 32px;
+	text-align: center;
+	border: none;
+}
+
+.get-tickets-btn{
+	color: #1650A2;
+	padding: 17px 22px;
+	background-color: white;
+	text-decoration: none;
+	font-weight: 500px;
+	font-size: 32px;
+	text-align: center;
+	border: 6px;
+	border-color: #1650A2;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
