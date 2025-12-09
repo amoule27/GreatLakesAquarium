@@ -1,5 +1,19 @@
 
+/* ------ UTILITES ---------*/
 
+.overflow-hidden{
+	overflow: hidden;
+}
+
+.align-self-end{
+	display: grid;
+	align-self: self-end;
+}
+
+.align-items-end{
+	display: flex;
+	align-self: self-end;
+}
 /* ------ FONTS ---------*/
 
 
@@ -32,10 +46,17 @@
 
 
 
+
+/* ------ Global Styles ---------*/
+
+
+
 p { 
-	font-size: 32px;
+	font-family: "futura-pt";
+	font-size: 25px;
 	font-weight: 400;
 	color: #000000;
+	line-height: 145%;
  }
 
 
@@ -45,6 +66,7 @@ h1{
 	font-weight: 700;
 	font-size: 96px;
 	color: #FFFFFF;
+	padding: 0px;
 
 }
 
@@ -52,8 +74,9 @@ h1{
 h2{
 	font-family: "futura-pt";
 	font-weight: 600;
-	font-size: 64px;
+	font-size: 54px;
 	color: #1650A2;
+	margin: 0px;
 }
 
 
@@ -69,7 +92,7 @@ h3{
 h4{
 	font-family: "futura-pt";
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 35px;
 	color: #1650A2;
 }
 
@@ -79,6 +102,8 @@ h5{
 	font-weight: 500;
 	font-size: 32px;
 	color: #1650A2;
+	text-decoration: none;
+	margin: 0px;
 }
 
 
@@ -87,14 +112,6 @@ body{
 }
 
 
-.nav-text{
-	font-family: "futura-pt";
-	font-weight: 500;
-	font-size: 20px;
-	color: ffffff;
-	padding-right: 100px;
-
-}
 
 
 /* ------ NAVIGATION ---------*/
@@ -113,6 +130,15 @@ body{
 	padding: 20px;
 }
 
+.nav-text{
+	font-family: "futura-pt";
+	font-weight: 500;
+	font-size: 25px;
+	color: ffffff;
+	padding-right: 100px;
+
+}
+
 
 nav, li{
 	list-style: none;
@@ -122,6 +148,7 @@ nav, li{
 
 header{
 	background-color: #1650A2;
+}
 
 
 
@@ -133,46 +160,158 @@ nav ul {
 
 
 
-/* ------ Individual Styles ---------*/
-
-.section-padding{
-	section-padding: 70px;
-}
-
-
-
 
 
 
 /* ------ Images ---------*/
 
 
-.hero-image{
+.hero-image {
 	background-image: url(images/hero-image.webp);
 	background-size: cover;
-	height: 600px;
-	max-width: 100%;
+	width: 100%;
 	object-fit: cover;
 	background-position: center;
+	height: 675px;
+
 	
 }
 
+.donate-hero-image{
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 3 / 1;
+	object-fit: cover;
+
+}
+
 .halloween-image{
-	aspect-ratio: 5 / 3;
+	aspect-ratio: 4 / 3;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	object-fit: cover;
+	padding-top: 30px;
+	padding-left: 75px;
 }
 
 
 
+.gallery-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	
+}
+
+.gallery-image{
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 5 / 4;
+	object-fit: cover;
+}
+
+.isopod-img{
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-position: center;
+	object-fit: cover;
+	
+}
+
+
+.square-image{
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-position: center;
+	object-fit: cover;
+}
+
+
+.sturgeons-image{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background-position: center;
+	object-fit: cover;
+	padding-top: 60px;
+
+}
+
+.card-img-wrap{
+	overflow: hidden;
+	aspect-ratio: 3 /2;
+	object-fit: cover;
+
+
+}
+
+.card-image {
+	width: 100%;
+	object-fit: cover;
+}
+
 /* ------ Text Styles ---------*/
 
-
+.programs-text{
+	font-size: 24px;
+	text-align: center;
+	color: white;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
 .hero-text{
 	text-align: left;
 	margin-right: 20%;
 }
 
-.art-gallery-header{
-	margin-left: 30%;
+.indented-header{
+	margin-left: 250px;
+	align-items: center;
+	padding-bottom: 5px;
+}
+
+.indented-text{
+	display: flex;
+	align-items: center;
+	margin-left: 400px;
+
+}
+
+.gallery-light-txt{
+	font-family: "futura-pt";
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	
+
+.painting-artist{
+	margin-top: 45px;
+	margin-bottom: 26px;
+
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/* ------ Text Color ---------*/
+
+.white-text{
+		color: #ffffff;
+}
+
+.db-text{
+	color: #1650A2;
 }
 
 /* ------ Icons ---------*/
@@ -181,19 +320,104 @@ nav ul {
 	width: 1%;
 	position: absolute;
 	right: 12.5%;
-	top: 10%;
+	top: 45%;
 
+}
+
+.discovery-waves-lb{
+	width: 20%;
+	position: absolute;
+	bottom: 20%;
+	left: 38%;
+	z-index: -1;
+}
+
+.discovery-waves-db{
+	width: 20%;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	z-index: -1;
 }
 
 
 .waves-lb{
-	width: 10%;
+	width: 30%;
 	position: absolute;
-	bottom: 10%;
+	bottom: -13%;
 	right: 30%;
-	z-index: 2;
+	z-index: -1;
 }
 
+
+.isopod-waves{
+	transform: rotate(90deg);
+	width: 30%;
+	position: absolute;
+	top: -20%;
+	right: 0%;
+	z-index: 1;
+}
+
+.donate-waves{
+	transform: rotate(90deg);
+	width: 30%;
+	position: absolute;
+	bottom: -20%;
+	right: -15%;
+	z-index: 1;
+
+}
+
+.footer-icons{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 2%;
+	gap: 70px;
+}
+
+.waves-db{
+	width: 35%;
+	position: absolute;
+	bottom: 15%;
+	left: 15%;
+	z-index: -1;
+
+}
+
+.fieldtrip-waves{
+	width: 30%;
+	position: absolute;
+	top: -20%;
+	left: -20%;
+	z-index: 1;
+}
+
+/* ------ Grids ---------*/
+
+.donate-amount-form{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+ 	grid-template-rows: 2fr 2fr; 
+ 	gap: 2em;
+ 	width: 100%;
+}
+
+.donation-input {
+	width: 100%;
+  	padding: 35px;
+  	margin: 10px 0;
+	border-style: solid;
+	border-width: 6px;
+	border-color:#1650A2 ;
+  	font-size: 25px;
+
+ }
+
+.input::placeholder{
+  color:#1650A2;
+}
 
 /* ------ Postioning ---------*/
 
@@ -206,31 +430,140 @@ nav ul {
 	z-index: 2;
 }
 
+.align-items-end{
+	align-items: end;
+}
+
+
+
+/* ------ Backgrounds ---------*/
+
+.background-blue{
+	background-color: #1650A2;
+}
+
+
+.background-lb{
+	background-color: #65CCEB;
+}
+
+
+
+
+
 
 /* ------ Buttons ---------*/
 
 .hero-btn {
 	color: #1650A2;
-	padding: 17px 22px;
-	background-color: white;
+	padding: 24px 120px;
+	background: white;
 	text-decoration: none;
-	font-weight: 500px;
-	font-size: 32px;
-	text-align: center;
 	border: none;
+	font-family: "futura-pt";
+	font-weight: 500;
+	font-size: 25px;
+	
 }
 
-.get-tickets-btn{
-	color: #1650A2;
-	padding: 17px 22px;
-	background-color: white;
+
+.btn-wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+	gap: 20px;
+	
+
+}
+
+.prgms-btn{
+	display: block;
+	padding: 24px 63px;
 	text-decoration: none;
-	font-weight: 500px;
-	font-size: 32px;
 	text-align: center;
-	border: 6px;
-	border-color: #1650A2;
+	font-weight: 500px;
+	font-family: "futura-pt";
+	font-size: 25px;
+	margin-top: 25px;
+	border: solid 6px #1650A2;
+	color: #1650A2;
+	background-color: white;
+	align-items: end;
 
+}
+
+.btn{
+	display: inline-block;
+	padding: 24px 87px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500px;
+	font-family: "futura-pt";
+	font-size: 25px;
+	margin-top: 25px;
+
+
+}
+
+
+.blue-btn{
+	border: solid 6px #1650A2;
+	color: #1650A2;
+	background-color: white;
+}
+
+
+
+.white-btn{
+	border: solid 6px white;
+	color: white;
+	background: transparent;
+}
+
+
+.dark-blue-btn{
+	color: white;
+	background-color: #1650A2;
+	margin-top: 60px;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 24px 87px;
+}
+
+
+
+.lb-btn{
+	color: #1650A2;
+	background-color: #65CCEB;
+	display: block;
+	padding: 24px 87px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500px;
+	font-family: "futura-pt";
+	font-size: 25px;
+
+}
+
+.other-btn{
+	grid-column: 2 / span 2;
+	display: block;
+	box-sizing: border-box;
+	width: 85%;
+
+}
+
+.learn-more-btn{
+	color: #1650A2;
+	padding: 0px;
+	margin-left: 0px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	border: none;
+	background: transparent;
 
 }
 
@@ -239,16 +572,70 @@ nav ul {
 
 
 
+/* ----MOBILE---- */
+
+@media screen and (max-width: 478px) {
+
+	.nav-wrap{
+		display: none;
+	}
+
+
+	/* TYPOGRAPHY */
+
+	h1 {
+		font-size: 58px;
+	}
+
+	h2 {
+		font-size: 44px;
+	}
+
+	h3{
+		font-size: 35;
+	}
+
+	h4{
+	font-size: 30px;
+	
+	}
+
+
+	h5{
+	font-size: 28px;
+	}
+
+
+	.logo{
+	width: 100%;
+	}
+
+	
+	.hamburger {
+	width: 30px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+	.btn{
+	display: block;
+	padding: 24px 87px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 500px;
+	font-family: "futura-pt";
+	font-size: 25px;
+	margin-top: 25px;
+	}
 
 
 
 
 
 
-
-
-
-
+}
 
 
 

@@ -3,17 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Great Lakes Aquarium</title>
+	<title>Home - Great Lakes Aquarium</title>
 
 
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="layout.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	
 	<!-- FONTS -->
 	
 	<link rel="stylesheet" href="https://use.typekit.net/qis4sfu.css">
+
+	<!-- MATERIAL ICONS -->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=map" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios" />
 	
 </head>
 
@@ -25,8 +32,10 @@
 	<div class="nav-wrap">
 
 		<div><!-- LOGO -->
-		<a href="index.html"><img src="svgs/aquarium-logo1.svg" style="width: 80%;">
+		<a href="index.html"><img src="svgs/aquarium-logo1.svg" style="width: 80%;" class="logo">
 		</div>
+
+
 
 <!-- NAVIGATION -->
 
@@ -54,33 +63,47 @@
 
 	</div>
 
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+	
+
 </header>
 
 
+<!-- Hero Section -->
 
-<section> <!-- Hero Section -->
+<section class="hero-image"> 
 	
-	<div class="container"> <!-- Container -->
+	<div class="container padding-top"> <!-- Container -->
 		
 		<div class="row">  <!-- Row -->
 
-			<div class="col col-lg-6">
-				
-				<h1 class="hero-text">Discover Wonder</h1>
+			<div class="col col-lg-12 col-sm-12">  <!-- Column -->
 
-				<div class="hero-image"></div>
+				<h1 class="hero-text">Discover Wonder</h1> 
+
+			</div> <!-- Column Ends -->
+
+		</div> <!-- Row Ends-->
+
+		<div class="row">  <!-- Row -->
+
+			<div class="col col-lg-7 col-sm-12 btn-wrap">  <!-- Column -->
 
 				<a href="#index" class="hero-btn">Get Tickets</a>
 
 				<a href="#index" class="hero-btn">Plan Your Visit</a>
 
-			</div>
+			</div>  <!-- Column Ends -->
 
 		</div> <!-- Row Ends-->
 
-		
-	</div> <!-- Container Ends-->
 
+	</div> <!-- Container Ends-->
 
 </section>
 
@@ -92,23 +115,28 @@
 
 		<div class="row"><!-- Row-->
 
-			<div class="col col-lg-12"><!-- Column -->
+			<div class="col col-lg-6 col-sm-12"><!-- Column -->
 
 				<h4>Upcoming Events</h4>
 
-				<h2>Scarium at the Aquarium</h2>
+					<h2>Scarium at the Aquarium</h2>
 
-				<p>Explore a spookily-decorated Aquarium, trick-or-treat among the exhibits, and show off your creative costumes! Enjoy crafts, vendor booths, and games as well as activity materials to take home and enjoy.</p>
+						<p>Explore a spookily-decorated Aquarium, trick-or-treat among the exhibits, and show off your creative costumes! Enjoy crafts, vendor booths, and games as well as activity materials to take home and enjoy.</p>
 
-				<a href="#index" class="get-tickets-btn">Get Tickets</a>
+				<div>
+				<a href="#index" class="btn blue-btn">Get Tickets</a>
+				</div>
 
 			</div> <!-- Column Ends-->
 
-			<div class="col col-lg-6"> <!-- Column -->
+			<div class="col col-lg-6 col-sm-12"> <!-- Column -->
 
-				<img src="svgs/waves2.svg" class="waves-lb">
+				<img src="svgs/waves2.svg" class="waves-lb" alt="">
 
-				<img src="images/halloween.webp" class="halloween-image">
+				<div> 
+					<img src="images/halloween.webp" alt="Scuba divers in tank with costumes on" class="halloween-image">
+				</div>
+
 
 
 			</div> <!-- Column Ends -->
@@ -125,16 +153,16 @@
 
 
 
-<section class="section-padding"> <!-- Gallery Section -->
+<section class="gallery-padding overflow-hidden"> <!-- Gallery Section -->
 
 
 	<div class="container"><!-- Container -->
 
 			<div class="row"><!-- Row-->
 
-				<div class="col col-lg-4"><!-- Column -->
+				<div class="col col-lg-6 col-sm-12"><!-- Column -->
 
-					<h2 class="art-gallery-header">Merrill Lynch Fine Arts Gallery</h2>
+					<h2 class="indented-header">Merrill Lynch Fine Arts Gallery</h2>
 
 				</div> <!-- Column Ends-->
 
@@ -142,78 +170,235 @@
 
 			<div class="row"> <!-- Row-->
 
-				<div class="col col-lg-5">
+				<div class="col col-lg-7 col-sm-12"> <!-- Column -->
 
-					<p>This rotating gallery showcases local and regional artists whose work captures the spirit of the Lake Superior region.</p>
+					<div class="indented-text">
+						<p>This rotating gallery showcases local and regional artists whose work captures the spirit of the Lake Superior region.</p>
+					</div>
+
+					<div class="indented-text">
+						<a href="#index" class="btn blue-btn">Explore</a>
+					</div>
 
 
-				</div>
+				</div>  <!-- Column Ends-->
 
+			</div> <!-- Row Ends -->
+
+		</div> <!-- Container Ends -->
+
+		<div class="container-right" style="margin-left: -37px;">
+
+
+			<div class="justify-content-right padding-top-10 gallery-margin"> <!-- Row-->
+
+				<div class="col col-lg-4 col-sm-12 gallery-wrap"> <!-- Painting 1 -->
+
+					<div>
+
+						<div>
+							<img src="images/art-gallery1.webp" alt="painting of a stream" class="gallery-image">
+						</div>
+
+						<div>
+							<h4 class="painting-artist">Adam Swanson</h4>
+							<p class="gallery-light-txt">August 17, 2025 through December 1, 2025</p>
+
+							<button href="#index" class="btn learn-more-btn">Learn More<span class="material-symbols-outlined">arrow_forward_ios</span></button>
+
+						</div>
+					
+					</div>
+
+				</div> <!-- Painting 1 Ends-->
+
+		
+				<div class="col col-lg-4 col-sm-12 gallery-wrap"> <!-- Painting 2 -->
+
+					<div>
+
+						<div>
+							<img src="images/art-gallery2.webp" alt="abstract painting of a forest" class="gallery-image">
+						</div>
+
+						<div>
+							<h4 class="painting-artist">Aaron Kloss</h4>
+							<p class="gallery-light-txt">May 29, 2025 through September 1, 2025</p>
+
+							<button href="#index" class="btn learn-more-btn">Learn More<span class="material-symbols-outlined">arrow_forward_ios</span></button>
+
+
+
+						</div>
+
+					</div>
+
+				</div> <!-- Painting 2 Ends-->
+
+			</div> <!-- Row Ends -->
+
+		</div>  <!-- Container Ends-->
+
+
+</section>
+
+<section class="background-blue section-padding position-relative"> <!-- Lava to Lakes Section -->
+
+	<div class="container z-index-2"><!-- Container -->
+
+		<div class="row"><!-- Row-->
+
+			<div class="col col-lg-4 col-sm-12"><!-- Column -->
+
+				<h2 class="white-text padding-top-80">New Exhibit: Lava to Lakes</h2>
+
+					<p class="white-text">Step back in time at Great Lakes Aquarium in our largest exhibit design to date. Lava to Lakes is Minnesota’s ultimate origin story, tracing the region’s history to a time before land, when the region was covered by expansive ancient seas.</p>
+
+					<div>
+						<a href="#index" class="btn white-btn">Explore other Exhibits</a>
+					</div>
+
+
+			</div> <!-- Column Ends-->
+
+			<div class="col col-lg-2">
+				
 			</div>
 
+			<div class="col col-lg-6 col-sm-12"> <!-- Column -->
+
+				<img src="svgs/waves2.svg" class="isopod-waves" alt="">
+
+					<div> 
+						<img src="images/isopod.webp" alt="isopod" class="square-image">
+					</div>
+
+			</div> <!-- Column Ends -->
 
 
-</section>
-
-<section> <!-- Lava to Lakes Section -->
-	
+		</div> <!-- Row Ends -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</div>  <!-- Container Ends-->
 
 </section>
 
+		
+
+<section class="section-padding  position-relative"><!-- 25th Anniversary Section -->
+
+	<div class="container z-index-1"><!-- Container -->
+
+			<div class="row"><!-- Row-->
+
+				<div class="col col-lg-4 col-sm-12"><!-- Column -->
+
+					<div>
+						<img src="images/fish-art.webp" alt="fish wall art" class="square-image">
+					</div>
+
+				</div> <!-- Column Ends -->
+
+				<div class="col col-lg-7 col-sm-12"><!-- Column -->
+
+					<div class="anniversary-column-padding">
+
+						<h4>Upcoming Events</h4>
+
+						<h2>25th Anniversary</h2>
+
+						<p>Join us for a week’s worth of celebratory events culminating in a 25th Anniversary Open House Celebration on Friday, July 25th!</p>
+
+						<a href="#index" class="btn blue-btn">Learn More</a>
+
+						<div>
+							<img src="images/sturgeon.webp" alt="sturgeons and diver" class="sturgeons-image">
+						</div>
+
+					</div> <!-- Column Ends -->
+			
+			</div> <!-- Row Ends -->
+
+			<img src="svgs/waves.svg" class="waves-db" alt="">
+
+	</div> <!-- Container Ends-->
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer-padding background-lb position-relative">
+
+	<div class="container container-full"> <!-- CONTAINER -->
+
+		<div class="row"><!-- ROW -->
+
+			<div class=" col col-lg-4 col-sm-12"><!-- COLUMN 1 -->
+
+				<a href="index.html"><img src="svgs/aquarium-logo2.svg" style="width: 60%;"></a>
+
+					<div class="hours-padding">
+						<h5 class="db-text">Open Daily</h5>
+						<p class="db-text">10 a.m. – 6 p.m.</p>
+					</div>
+
+					<div>
+						<h5 class="db-text">Great Lakes Aquarium</h5>
+						<p class="db-text">353 Harbor Drive</p>
+						<p class="db-text">Duluth, MN 55802</p>
+					</div>
 
 
+					<p class="phone-number-padding db-text">(218) 740-3474</p>
+
+			</div> <!-- Column Ends -->
+
+			<div class="col col-lg-4 col-sm-12"> <!-- COLUMN 2 -->
+
+					<h5 class="text-center">Contact Us</h5>
+
+					<div class="justify-content-center">
+						<button href="#index" class="btn dark-blue-btn"><span class="material-symbols-outlined">mail</span>Send a Message</button>
+					</div>
+
+			</div> <!-- Column Ends -->
+
+			<div class="col col-lg-4 col-sm-12"> <!-- COLUMN 3 -->
+
+					<h5 class="text-center">Getting There</h5>
+
+					<div class="justify-content-center">
+						<button href="#index" class="btn dark-blue-btn"><span class="material-symbols-outlined">location_on</span>Directions & Parking</button>
+					</div>
+
+					<div class="justify-content-center">
+						<button href="#index" class="btn dark-blue-btn"><span class="material-symbols-outlined">map</span>Map</button>
+					</div>
 
 
+			</div> <!-- Column Ends -->
+
+		</div> <!-- Row Ends-->
+				
+		<div class="row"> <!-- ROW -->
+
+			<div class="col col-lg-12 col-sm-12 footer-icons"> <!-- Column -->
+
+				<img src="svgs/youtube.svg">
+				<img src="svgs/instagram.svg">
+				<img src="svgs/facebook.svg">
 
 
+			</div> <!-- Column Ends -->
+
+		</div> <!-- Row Ends-->
+
+	</div> <!-- Container Ends-->
+
+</footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
