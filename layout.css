@@ -56,6 +56,10 @@
 	margin-top: 35px;
 }
 
+.margin-left-37{
+	margin-left: -37px;
+}
+
 
 /* PADDING */
 
@@ -86,7 +90,7 @@
 }
 
 .phone-number-padding{
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 .hours-padding{
@@ -110,6 +114,11 @@
 
 .padding-top-80{
 	padding-top: 80px;
+}
+
+.discovery-gallery-padding{
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 
 .padding-btm-50{
@@ -188,14 +197,17 @@
 
 .col-lg-1 {
 	max-width: 8.33%;
+	flex: 0 0 8.33%;
 }
 
 .col-lg-2 {
 	max-width: 16.67%;
+	flex: 0 0 16.67%;
 }
 
 .col-lg-3 {
 	max-width: 25%;
+	flex: 0 0 25.00%;
 }
 
 .col-lg-4 {
@@ -205,38 +217,46 @@
 
 .col-lg-5 {
 	max-width: 41.67%;
+	flex: 0 0 41.67%;
 }
 
 .col-lg-6 {
 	max-width: 50%;
+	flex: 0 0 50.00%;
 }
 
 .col-lg-7 {
 	max-width: 58.33%;
+	flex: 0 0 58.33%;
 }
 
 .col-lg-8 {
 	max-width: 66.67%;
+	flex: 0 0 66.67%;
 	
 }
 
 .col-lg-9 {
 	max-width: 75%;
+	flex: 0 0 75.00%;
 }
 
 .col-lg-10 {
 	max-width: 83.33%;
+	flex: 0 0 83.33%;
 }
 
 .col-lg-11 {
 	max-width: 91.67%;
+	flex: 0 0 91.67%;
 }
 
 .col-lg-12 {
 	max-width: 100%;
+	flex: 0 0 100%;
 }
 
-@media screen and (max-width: 478px){
+@media screen and (max-width: 550px){
 		
 		.form-span-2{
 		grid-column: 1 / span 1 ;
@@ -244,63 +264,105 @@
 
 		.col-sm-1 {
 		flex: 0 0 8.33%;
-		max-width: 8.33%;
+		max-width: 100%;
 		}
 
 		.col-sm-2 {
 			flex: 0 0 16.7%;
-			max-width: 16.67%;
+			max-width: 100%;
 		}
 
 		.col-sm-3 {
 			flex: 0 0 25%;
-			max-width: 25%;
+			max-width: 100%;
 		}
 
 		.col-sm-4 {
 			flex: 0 0 33.33%;
-			max-width: 33.33%;
+			max-width: 100%;
 		}
 
 		.col-sm-5 {
 			flex: 0 0 41.67%;
-			max-width: 41.67%;
+			max-width: 100%;
 		}
 
 		.col-sm-6 {
 			flex: 0 0 50%;
-			max-width: 50%;
+			max-width: 100%;
 		}
 
 		.col-sm-7 {
 			flex: 0 0 58.33%;
-			max-width: 58.33%;
+			max-width: 100%;
 		}
 
 		.col-sm-8 {
 			flex: 0 0 66.67%;
-			max-width: 66.67%;
+			max-width: 100%;
 		}
 
 		.col-sm-9 {
 			flex: 0 0 75%;
-			max-width: 75%;
+			max-width: 100%;
 		}
 
 		.col-sm-10 {
 			flex: 0 0 83.33%;
-			max-width: 83.33%;
+			max-width: 100%;
 		}
 
 		.col-sm-11 {
 			flex: 0 0 91.67%;
-			max-width: 91.67%;
+			max-width: 100%;
 		}
 
 		.col-sm-12 {
 			flex: 0 0 100%;
 			max-width: 100%;
 		}
+
+		.padding-top{
+		padding-top: 30px;
+		}
+
+		.gallery-padding{
+		padding-top: 30px;
+		padding-bottom: 40px;
+		}
+
+
+		.margin-left-37{
+		margin-left: 0px;
+		}
+
+		.discovery-gallery-padding{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

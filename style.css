@@ -14,6 +14,21 @@
 	display: flex;
 	align-self: self-end;
 }
+
+.margin-top{
+	margin-top: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.height-100{
+	min-height: 100%;
+}
+
+.gap-30px{
+	gap: 235px;
+}
+
 /* ------ FONTS ---------*/
 
 
@@ -166,6 +181,11 @@ nav ul {
 /* ------ Images ---------*/
 
 
+.aquarium-logo-2{
+	width: 60%;
+}
+
+
 .hero-image {
 	background-image: url(images/hero-image.webp);
 	background-size: cover;
@@ -177,6 +197,15 @@ nav ul {
 	
 }
 
+.discovery-gallery-image{
+	aspect-ratio: 1 / 1;
+	width: 95%;
+	height: 100%;
+	overflow: hidden;
+	background-position: center;
+	object-fit: cover;
+
+}
 .donate-hero-image{
 	width: 100%;
 	height: 100%;
@@ -257,6 +286,14 @@ nav ul {
 	object-fit: cover;
 }
 
+.card-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
+}
+
 /* ------ Text Styles ---------*/
 
 .programs-text{
@@ -316,6 +353,14 @@ nav ul {
 
 /* ------ Icons ---------*/
 
+.mail-icon{
+	width: 10%;
+}
+
+.map-icon{
+	width: 25%;
+}
+
 .search-icon{
 	width: 1%;
 	position: absolute;
@@ -327,17 +372,17 @@ nav ul {
 .discovery-waves-lb{
 	width: 20%;
 	position: absolute;
-	bottom: 20%;
-	left: 38%;
+	bottom: -3%;
+	right: 25%;
 	z-index: -1;
 }
 
 .discovery-waves-db{
 	width: 20%;
 	position: absolute;
-	top: 15%;
-	left: 15%;
-	z-index: -1;
+	top: 4%;
+	left: 23%;
+	z-index: 1;
 }
 
 
@@ -451,7 +496,6 @@ nav ul {
 
 
 
-
 /* ------ Buttons ---------*/
 
 .hero-btn {
@@ -463,6 +507,7 @@ nav ul {
 	font-family: "futura-pt";
 	font-weight: 500;
 	font-size: 25px;
+
 	
 }
 
@@ -528,6 +573,7 @@ nav ul {
 	border: none;
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	gap: 6px;
 	padding: 24px 87px;
 }
@@ -572,48 +618,49 @@ nav ul {
 
 
 
+
+
+
+
+.nav-wrap-mobile{
+	display: none;
+}
+
+.hero-wrap-mobile{
+	display: none;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #FFF4E2;
+}
+
 /* ----MOBILE---- */
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 550px) {
 
-	.nav-wrap{
-		display: none;
+	.nav-wrap {
+	display: none;
 	}
 
-
-	/* TYPOGRAPHY */
-
-	h1 {
-		font-size: 58px;
-	}
-
-	h2 {
-		font-size: 44px;
-	}
-
-	h3{
-		font-size: 35;
-	}
-
-	h4{
-	font-size: 30px;
-	
-	}
-
-
-	h5{
-	font-size: 28px;
+	.nav-wrap-mobile{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
 	}
 
 
 	.logo{
-	width: 100%;
+	width: 50%;
 	}
 
 	
 	.hamburger {
 	width: 30px;
-	height: 20px;
+	height: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -621,14 +668,178 @@ nav ul {
 
 	.btn{
 	display: block;
-	padding: 24px 87px;
-	text-decoration: none;
-	text-align: center;
-	font-weight: 500px;
-	font-family: "futura-pt";
-	font-size: 25px;
-	margin-top: 25px;
 	}
+
+	.isopod-waves{
+	transform: rotate(90deg);
+	width: 50%;
+	position: absolute;
+	top: -7%;
+	right: 0%;
+	z-index: 1;
+	}
+
+	.db-text{
+	color: #1650A2;
+	text-align: center;
+	}
+
+	.dark-blue-btn{
+	color: white;
+	background-color: #1650A2;
+	margin: 20px;
+	margin-bottom: 20px;
+	border: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 24px 50px;
+	}
+
+	.hero-text{
+	text-align: left;
+	}
+
+	.btn-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
+
+	}
+
+	.halloween-image{
+	aspect-ratio: 4 / 3;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	object-fit: cover;
+	padding-top: 30px;
+	padding-left: 0px;
+	}
+
+	.waves-lb{
+	width: 60%;
+	position: absolute;
+	bottom: -2%;
+	left: -10%;
+	z-index: -1;
+	}
+
+	.indented-header{
+	margin-left: 0px;
+	align-items: center;
+	padding-bottom: 5px;
+	}
+
+	.indented-text{
+	display: flex;
+	align-items: center;
+	margin-left: 0px;
+	}
+
+	.learn-more-btn{
+	color: #1650A2;
+	padding: 0px;
+	margin-left: 0px;
+	margin-bottom: 20px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	border: none;
+	background: transparent;
+
+	}
+
+	.aquarium-logo-2{
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	}
+
+	.footer-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2%;
+	gap: 70px;
+	padding-top: 40px;
+	}
+
+
+	.white-btn{
+	border: solid 6px white;
+	color: white;
+	background: transparent;
+	margin-bottom: 20px;
+	}
+
+	.height-100{
+	min-height: 100%;
+	margin-bottom: 20px;
+	}
+
+	.discovery-waves-db{
+	width: 50%;
+	position: absolute;
+	top: -3%;
+	left: -10%;
+	z-index: 1;
+	}
+
+
+	.gap-30px{
+	gap: 20px;
+	}
+
+
+	.donate-waves{
+	transform: rotate(90deg);
+	width: 50%;
+	position: absolute;
+	bottom: -3%;
+	right: -25%;
+	z-index: 1;
+
+	}
+
+	.donate-amount-form{
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 1fr;
+ 	gap: 2em;
+ 	width: 100%;
+
+	}
+
+	.other-btn{
+	grid-column: 1 / span 1;
+	display: block;
+	box-sizing: border-box;
+	width: 72%;
+
+	}
+
+	.donation-input {
+	width: 90%;
+  	padding: 35px;
+  	margin: 10px 0;
+	border-style: solid;
+	border-width: 6px;
+	border-color:#1650A2 ;
+  	font-size: 25px;
+
+ 	}
+
+
+
+
+
+
+
+
+
+
 
 
 
